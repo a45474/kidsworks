@@ -30,4 +30,4 @@ function slider_init () {
     $('.main-slider > .side-btns > div:last-child').click();
 }
 
-setInterval(slider_init, 2000);
+setInterval(slider_init, 5000);

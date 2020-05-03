@@ -1,5 +1,5 @@
 .main {
-    top:50%;
+    top:47%;
     left:50%;
     transform: translateX(-50%) translateY(-50%) scale(1);
     width:670px;
@@ -16,7 +16,7 @@
     bottom:55%;
     left:50%;
     transform: translateX(-50%) translateY(50%);
-    transition: bottom 1s 3s, transform 1s 3s, background-image 0s 6s;
+    transition: bottom 1s 3s, transform 1s 3s, background 0s 6s;
     width:141.745px;
     height:90.621px;
     background-image: url(./index.img/logo_4.gif);

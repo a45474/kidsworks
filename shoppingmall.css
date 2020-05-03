@@ -1,10 +1,18 @@
+.top-slider {
+    font-size:11px;
+    padding:12px 0;
+    background-color:#e61d79;
+    color:#fff;
+    font-weight:800;
+}
+
 .top-bar {
     border-bottom:1px solid rgba(100,100,100,.1);
     background-color:rgba(255,255,255,.8);
     position: fixed;
     z-index: 10;
     width:100%;
-    top:0;
+    top:40px;
     left:0;
 }
 
@@ -13,17 +21,21 @@
 }
 
 .top-bar > .inner > .logo > img {
-    width:70px;
-    margin:25px 0 20px 0;
+    width:120px;
+    margin:35px 0 25px 0;
     cursor: pointer;
 }
 
+.top-bar > .inner > .main-menu {
+    width:1200px;
+}
+
 .top-bar > .inner > .main-menu > .cell {
-    width:calc(100% / 9);
+    width:calc(100% / 8);
     text-transform: uppercase;
     font-size:14px;
     font-weight: 800;
-    padding:12px 0;
+    padding:14px 0;
     color:#444;
     position: relative;
     white-space: nowrap;
@@ -78,7 +90,11 @@
 
 .main-slider {
     height:700px;
-    margin-top:155px;
+    margin:0 auto;
+}
+
+.slider-1 {
+    margin-top:190px !important;
 }
 
 .main-slider > .slides {
@@ -119,7 +135,7 @@
     position: absolute;
     width:300px;
     height:100%;
-    background-color:rgba(255,255,255,.5);
+    background-color:rgba(255,255,255,0);
     top:0;
     left:0;
     cursor:pointer;
@@ -128,6 +144,16 @@
 .main-slider > .side-btns > div:nth-of-type(2) {
     left:auto;
     right:0;
+}
+
+.main-slider > .side-btns > div > i {
+    position: absolute;
+    font-size:60px;
+    color:rgba(255,255,255,.8);
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-shadow: 5px 5px 5px rgba(0,0,0,.3);
 }
 
 .item-list {
@@ -221,6 +247,21 @@
 .bn-box {
     height:400px;
     background-color:pink;
+   background-image:url(https://cdn.pixabay.com/photo/2016/02/22/10/06/hedgehog-1215140_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bn-box > .inner > .text-box {
+    color:#fff;
+    font-weight: 800;
+    font-size:50px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .footer {
