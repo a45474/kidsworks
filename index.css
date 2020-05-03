@@ -1,0 +1,114 @@
+.main {
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+    width:670px;
+    height:447.297px;
+    transition: top 1s 6s, transform 1s 7s;
+}
+
+.main.active {
+    top:37%;
+    transform: translateX(-50%) translateY(-50%) scale(.8);
+}
+
+.main > .logo {
+    bottom:55%;
+    left:50%;
+    transform: translateX(-50%) translateY(50%);
+    transition: bottom 1s 3s, transform 1s 3s, background-image 0s 6s;
+    width:141.745px;
+    height:90.621px;
+    background-image: url(./index.img/logo_4.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main.active > .logo {
+    bottom:0;
+    transform: translateX(-50%) translateY(0%);
+    background-image: url(./index.img/logo_2.gif);
+}
+
+.main.active > .logo > img:nth-of-type(1) {
+    opacity: 0;
+}
+
+.main.active > .logo > img:nth-of-type(2) {
+    opacity: 1;
+}
+
+.main > .logo > img:nth-of-type(2) {
+    opacity: 0;
+}
+
+.main > .image > .img-box {
+    width:50%;
+    height:340px;
+    left:0;
+    top:0;
+}
+
+.main > .image > .img-box:nth-of-type(2) {
+    left:auto;
+    right:0;
+}
+
+.main > .image > .img-box > img {
+    bottom:0;
+    left:0;
+    transform: scale(0);
+}
+
+.main > .image > .img-box:nth-of-type(1) > img {
+    transition: transform 2s 3s;
+}
+
+.main > .image > .img-box:nth-of-type(2) > img {
+    transition: transform 2s 4s;
+}
+
+.main > .image > .img-box:nth-of-type(2) > img {
+    left:auto;
+    right:0;
+}
+
+.main.active > .image > .img-box > img {
+    transform: scale(1);
+}
+
+.main > .link-btn {
+    bottom:-280px;
+    left:50%;
+    transform: translateX(-50%) scale(0);
+    transition: transform 1s 8s;
+}
+
+.main.active > .link-btn {
+    transform: translateX(-50%) scale(1);
+}
+
+.main > .link-btn > div {
+    font-size:17px;
+    letter-spacing: -0px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 48px;
+    margin-bottom:17px;
+    color:#fff;
+    border-radius: 20px;
+    padding:0 20px;
+}
+
+.main > .link-btn > .homepage-btn {
+    background-color: #2cc0c4;
+}
+
+
+.main > .link-btn > .shoppingmall-btn {
+    background-color: #e61d79;
+}
+
+.main > .link-btn > .bins-btn {
+    background-color: #333;
+}

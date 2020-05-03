@@ -1,0 +1,241 @@
+.top-bar {
+    border-bottom:1px solid rgba(100,100,100,.1);
+    background-color:rgba(255,255,255,.8);
+    position: fixed;
+    z-index: 10;
+    width:100%;
+    top:0;
+    left:0;
+}
+
+.top-bar > .inner > .logo {
+    border-bottom:1px solid rgba(100,100,100,.1);
+}
+
+.top-bar > .inner > .logo > img {
+    width:70px;
+    margin:25px 0 20px 0;
+    cursor: pointer;
+}
+
+.top-bar > .inner > .main-menu > .cell {
+    width:calc(100% / 9);
+    text-transform: uppercase;
+    font-size:14px;
+    font-weight: 800;
+    padding:12px 0;
+    color:#444;
+    position: relative;
+    white-space: nowrap;
+}
+
+.top-bar > .inner > .main-menu > .cell::after {
+    position: absolute;
+    width:0;
+    content: "";
+    height:2px;
+    background-color: #444;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    transition: width .5s;
+}
+
+.top-bar > .inner > .main-menu > .cell:hover::after {
+    width:calc(100% - 50px);
+}
+
+.top-bar > .inner > .main-menu > .cell.new {
+    color:#e61d79;
+}
+
+.top-bar > .inner > .main-menu > .cell.new::after {
+    display: none;
+}
+
+.top-bar > .inner > .main-menu > .cell.new:hover {
+    background-color: #e61d79;
+    color:#fff;
+    transition: all .5s;
+}
+
+.top-bar > .inner > .main-menu > .cell.notice {
+    color:#2258a2;
+}
+
+.top-bar > .inner > .main-menu > .cell.notice::after {
+    background-color: #2258a2;
+}
+
+
+.top-bar > .inner > .main-menu > .cell.event {
+    color:#eb5f2e;
+}
+
+.top-bar > .inner > .main-menu > .cell.event::after {
+    background-color: #eb5f2e;
+}
+
+.main-slider {
+    height:700px;
+    margin-top:135px;
+}
+
+.main-slider > .slides {
+   width:100%;
+    height:100%; 
+}
+
+.main-slider > .slides > .slide {
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    opacity: 0;
+    transition: opacity 1s;
+        
+}
+
+.main-slider > .slides > .slide.active {
+    opacity: 1;
+}
+
+.main-slider > .side-btns > div {
+    position: absolute;
+    width:300px;
+    height:100%;
+    background-color:rgba(255,255,255,.5);
+    top:0;
+    left:0;
+    cursor:pointer;
+}
+
+.main-slider > .side-btns > div:nth-of-type(2) {
+    left:auto;
+    right:0;
+}
+
+.item-list {
+    padding:100px 0;
+}
+
+.item-list > .cell {
+    width:calc((100% - 120px) / 4);
+    margin-top:50px;
+    cursor:pointer;
+}
+
+.item-list > .cell:nth-of-type(4n+1) {
+    clear:both;
+}
+
+.item-list > .cell:not(:nth-of-type(4n)) {
+    margin-right:40px; 
+}
+
+.item-list > .cell > .img-box {
+    height:240px;
+    box-shadow: 0px 0px 20px rgba(100,100,100,.3);
+    position: relative;
+    margin-bottom:15px;
+}
+
+.item-list > .cell > .img-box::before {
+    content: "";
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0);
+    transition: background-color .5s;
+}
+
+.item-list > .cell > .img-box:hover::before {
+    background-color: rgba(0,0,0,.8);
+}
+
+.item-list > .cell > .img-box::after {
+    position: absolute;
+    content:"comming soon";
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight:800;
+    letter-spacing: -.3px;
+}
+
+.item-list > .cell > .text-box > div {
+    position: relative;
+    padding:12px 0;
+}
+
+.item-list > .cell > .text-box > .title::after {
+    content:"상품명";
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top:0;
+    font-size:16px;
+    font-weight:800;
+}
+
+.item-list > .cell > .text-box > .text-1::after {
+    content:"상품설명";
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top:0;
+    font-size:13px;
+    font-weight:400;
+}
+
+.item-list > .cell > .text-box > .price::after {
+    content:"가격";
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top:0;
+    color:#e61d79;
+    font-weight:800;
+    font-size:14px;
+}
+
+.bn-box {
+    height:400px;
+    background-color:pink;
+}
+
+.footer {
+    background-color: #09c4a9;
+    padding:60px 0 60px 0;
+    color:#fff;
+    font-weight: 1000;
+    letter-spacing: .1px;
+    font-size:13px;
+}
+
+
+.footer > .inner > .logo > img {
+    width:80px;
+}
+
+.footer > .inner > .cell {
+    margin-right:50px;
+}
+
+.footer > .inner > .copyright > .cell {
+    margin-right:50px;
+}
+
+.footer > .inner > .copyright > .bins {
+    margin-top:10px;
+}
+
+.footer > .inner > .copyright > .bins > a:hover {
+    border-bottom:1px solid;
+}
+
