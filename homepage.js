@@ -27,3 +27,19 @@ $('.top-bar > .inner > .main-menu > .cell:nth-of-type(2) > a').click(function ()
 $('.top-bar > .inner > .main-menu > .cell:nth-of-type(3) > a').click(function (){
     alert('곧 많은 소식을 만날 수 있으실 거예요~');
 });
+
+
+function popup_close () {
+    
+    $('.popup').removeClass('active');
+    $('.popup-bg').removeClass('active');
+    
+}
+
+$('.popup > .close-btn').click(function () {
+    popup_close();
+});
+
+$('.popup-bg').click(function () {
+    popup_close();
+});
